@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Your First Pinterest Sale in 7 Days — Guaranteed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#E60023;--red-dark:#ad081b;--red-light:#fff0f2;
+  --cream:#FFF8F4;--warm:#FFFCFA;
+  --dark:#111;--mid:#444;--light:#888;
+  --gold:#D4880A;--gold-bg:#FFF8E1;--gold-border:rgba(212,136,10,.3);
+  --green:#0A8F42;--green-bg:#F0FBF4;--green-border:#b2e8c8;
+  --border:#EDE5DE;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+
+/* ── TICKER ── */
+.ticker{background:#1a1a1a;color:#fff;padding:9px 16px;font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;text-align:center;}
+.t-hl{color:#ffd166;font-weight:800;}
+.t-badge{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:50px;padding:2px 10px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;white-space:nowrap;}
+.gdot{width:6px;height:6px;border-radius:50%;background:#2ecc71;animation:pulse 1.4s infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.6)}}
+
+/* ── NAV ── */
+nav{background:#fff;border-bottom:1.5px solid var(--border);padding:11px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;box-shadow:0 2px 14px rgba(0,0,0,.07);}
+.logo{display:flex;align-items:center;gap:9px;font-family:'Syne',sans-serif;font-size:17px;font-weight:900;color:var(--dark);text-decoration:none;letter-spacing:-.3px;}
+.picon{width:30px;height:30px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Syne',sans-serif;font-size:16px;font-weight:900;flex-shrink:0;}
+.nav-r{display:flex;align-items:center;gap:12px;}
+.nav-live{font-size:12px;color:var(--mid);display:flex;align-items:center;gap:5px;white-space:nowrap;}
+.nav-cta{background:var(--red);color:#fff;padding:9px 20px;border-radius:50px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;transition:background .2s,box-shadow .2s;}
+.nav-cta:hover{background:var(--red-dark);box-shadow:0 4px 14px rgba(230,0,35,.4);}
+
+/* ── PROGRESS BAR ── */
+.prog-strip{background:#fff;border-bottom:1px solid var(--border);padding:9px 20px;}
+.prog-inner{max-width:680px;margin:0 auto;}
+.prog-labels{display:flex;justify-content:space-between;font-size:12px;font-weight:700;margin-bottom:5px;}
+.prog-labels .pl-taken{color:var(--red);}
+.prog-labels .pl-left{color:var(--mid);}
+.prog-track{height:9px;background:#f0e4dc;border-radius:50px;overflow:hidden;}
+.prog-fill{height:100%;border-radius:50px;background:linear-gradient(90deg,#b0001a,var(--red));transition:width 1s ease;}
+
+/* ── HERO ── */
+.hero{padding:56px 20px 40px;text-align:center;background:linear-gradient(168deg,#fff4f5 0%,#fff9f3 50%,#fffcfa 100%);position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(230,0,35,.04) 0%,transparent 65%);top:-320px;left:50%;transform:translateX(-50%);pointer-events:none;}
+
+.eyebrow{display:inline-flex;align-items:center;gap:7px;background:var(--gold-bg);border:1px solid var(--gold-border);color:#8a5c00;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.1px;padding:6px 15px;border-radius:50px;margin-bottom:24px;}
+
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(32px,7.5vw,64px);font-weight:900;line-height:1.08;max-width:800px;margin:0 auto 10px;color:var(--dark);}
+.hero h1 em{color:var(--red);font-style:normal;}
+.hero h1 u{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:3px;text-underline-offset:4px;}
+
+.hero-promise{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--green-border);border-radius:10px;padding:10px 18px;margin:16px auto 20px;font-size:14px;font-weight:700;color:var(--green);}
+.hp-check{font-size:18px;}
+
+.hero-sub{font-size:clamp(15px,2.2vw,18px);color:var(--mid);max-width:560px;margin:0 auto 32px;line-height:1.72;}
+.hero-sub strong{color:var(--dark);font-weight:700;}
+
+/* PRICE CARD */
+.pcard{background:#fff;border:2.5px solid var(--red);border-radius:24px;padding:32px 26px 26px;max-width:410px;margin:0 auto 30px;box-shadow:0 10px 54px rgba(230,0,35,.16);position:relative;}
+.pcard-ribbon{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:5px 18px;border-radius:50px;white-space:nowrap;}
+.price-row{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:2px;}
+.p-was{font-size:22px;color:#bbb;text-decoration:line-through;font-weight:500;}
+.p-now{font-family:'Syne',sans-serif;font-size:62px;font-weight:900;color:var(--red);line-height:1;}
+.p-save{text-align:center;font-size:13px;font-weight:700;color:var(--green);margin-bottom:16px;}
+
+.live-pill{display:flex;align-items:center;gap:9px;background:var(--green-bg);border:1px solid var(--green-border);border-radius:12px;padding:11px 16px;margin-bottom:15px;}
+.lp-text{font-size:13px;color:#0a6832;font-weight:600;line-height:1.4;}
+.lp-text strong{display:block;font-size:15px;color:var(--green);}
+
+.slots-wrap{margin-bottom:18px;}
+.slots-meta{display:flex;justify-content:space-between;font-size:12px;font-weight:700;margin-bottom:6px;}
+.slots-meta .sm-red{color:var(--red);}
+.slot-track{height:10px;background:#f5ebe4;border-radius:50px;overflow:hidden;}
+.slot-bar{height:100%;border-radius:50px;background:linear-gradient(90deg,#b0001a,#E60023);transition:width 1s ease;}
+
+.cta{display:block;width:100%;background:var(--red);color:#fff;text-align:center;padding:18px 20px;border-radius:14px;font-size:17px;font-weight:800;text-decoration:none;transition:all .25s;box-shadow:0 5px 22px rgba(230,0,35,.4);position:relative;overflow:hidden;letter-spacing:.1px;}
+.cta::after{content:'';position:absolute;top:0;left:-100%;width:55%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent);animation:sheen 3s infinite;}
+@keyframes sheen{to{left:160%;}}
+.cta:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 9px 32px rgba(230,0,35,.48);}
+.cta-trust{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:11px;font-size:12px;color:#aaa;flex-wrap:wrap;}
+.cta-trust span{display:flex;align-items:center;gap:3px;}
+
+/* PROOF PILLS */
+.proof-row{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:26px;}
+.ppill{background:#fff;border:1px solid var(--border);border-radius:50px;padding:7px 15px;font-size:13px;color:var(--mid);font-weight:500;display:flex;align-items:center;gap:6px;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+
+/* ── RED STAT BAR ── */
+.stat-bar{background:var(--red);padding:28px 20px;}
+.stat-row{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;}
+.stat-row .sn{font-family:'Syne',sans-serif;font-size:clamp(22px,4.5vw,40px);font-weight:900;color:#fff;line-height:1;}
+.stat-row .sl{font-size:11px;color:rgba(255,255,255,.72);text-transform:uppercase;letter-spacing:.7px;margin-top:4px;}
+
+/* ── 7-DAY PROMISE SECTION ── */
+.promise-sec{background:#fff;padding:60px 20px;}
+.ps-wrap{max-width:860px;margin:0 auto;}
+.promise-box{background:linear-gradient(135deg,#fff4f5,#fff9f0);border:2px solid #fcc;border-radius:22px;padding:44px 36px;text-align:center;position:relative;overflow:hidden;}
+.promise-box::before{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(230,0,35,.04),transparent);top:-100px;right:-80px;pointer-events:none;}
+.pb-day{font-family:'Syne',sans-serif;font-size:72px;font-weight:900;color:var(--red);line-height:1;margin-bottom:4px;}
+.pb-day span{font-size:28px;vertical-align:super;}
+.pb-label{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#aaa;margin-bottom:20px;}
+.pb-title{font-family:'Playfair Display',serif;font-size:clamp(22px,4vw,34px);font-weight:900;line-height:1.2;margin-bottom:16px;color:var(--dark);}
+.pb-title em{color:var(--red);font-style:normal;}
+.pb-desc{font-size:15px;color:var(--mid);line-height:1.75;max-width:560px;margin:0 auto 28px;}
+.pb-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;text-align:left;margin-top:24px;}
+.pb-step{background:#fff;border:1px solid var(--border);border-radius:14px;padding:16px 18px;}
+.pb-step .step-day{font-family:'Syne',sans-serif;font-size:11px;font-weight:900;color:var(--red);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px;}
+.pb-step p{font-size:13px;color:var(--mid);line-height:1.55;}
+.pb-step strong{color:var(--dark);font-weight:700;}
+
+/* ── GENERAL SECTIONS ── */
+section{padding:60px 20px;}
+.sw{max-width:880px;margin:0 auto;}
+.tag{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--red);margin-bottom:10px;}
+.sh{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,40px);font-weight:900;line-height:1.15;margin-bottom:14px;}
+.sh em{color:var(--red);font-style:normal;}
+.sp{font-size:16px;color:var(--mid);line-height:1.72;max-width:600px;}
+
+/* WHO */
+.sec-cream{background:var(--cream);}
+.sec-white{background:#fff;}
+.who-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:32px;}
+.wc{background:#fff;border-radius:16px;padding:22px;border:1px solid var(--border);position:relative;overflow:hidden;transition:transform .22s,box-shadow .22s;}
+.wc:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.09);}
+.wc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);}
+.we{font-size:28px;margin-bottom:10px;}
+.wc h3{font-size:15px;font-weight:700;margin-bottom:7px;}
+.wc p{font-size:13px;color:var(--mid);line-height:1.6;}
+
+/* SOCIAL PROOF BAR */
+.sp-bar{background:var(--dark);padding:22px 20px;}
+.sp-bar-inner{max-width:880px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;}
+.spb-item{display:flex;align-items:center;gap:10px;color:#fff;}
+.spb-icon{font-size:22px;}
+.spb-text strong{display:block;font-size:16px;font-weight:800;}
+.spb-text span{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.7px;}
+.spb-div{width:1px;height:32px;background:#333;}
+
+/* PAIN */
+.pain-list{margin-top:28px;display:flex;flex-direction:column;gap:10px;}
+.pi{display:flex;align-items:flex-start;gap:14px;background:#fff4f5;border:1px solid #ffd5d8;border-radius:13px;padding:15px 18px;}
+.pi-x{font-size:18px;flex-shrink:0;margin-top:1px;}
+.pi-t{font-size:14px;color:var(--mid);line-height:1.6;}
+.pi-t strong{color:var(--dark);font-weight:700;}
+.sol-box{margin-top:28px;background:linear-gradient(135deg,#f0fbf4,#fff9f0);border:1.5px solid var(--green-border);border-radius:16px;padding:28px;text-align:center;}
+.sol-box p{font-size:16px;line-height:1.75;color:var(--dark);}
+.sol-box strong{color:var(--green);}
+
+/* INSIDE */
+.inside-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px;margin-top:34px;}
+.ic{background:#fff;border-radius:18px;padding:24px;border:1px solid var(--border);transition:transform .2s,box-shadow .2s;position:relative;}
+.ic:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.09);}
+.ic-num{font-family:'Syne',sans-serif;font-size:11px;font-weight:900;color:var(--red);text-transform:uppercase;letter-spacing:1px;margin-bottom:9px;}
+.ic h3{font-size:15px;font-weight:700;margin-bottom:8px;line-height:1.3;color:var(--dark);}
+.ic p{font-size:13px;color:var(--mid);line-height:1.62;}
+.ic-tag{display:inline-block;margin-top:11px;background:var(--gold-bg);color:#8a5c00;font-size:11px;font-weight:700;padding:3px 10px;border-radius:50px;}
+
+/* NICHES */
+.sec-dark{background:var(--dark);}
+.sec-dark .sh{color:#fff;}
+.sec-dark .sp{color:#999;}
+.niche-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px;margin-top:30px;}
+.np{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:11px;padding:13px 14px;color:#ddd;font-size:13px;font-weight:500;display:flex;align-items:center;gap:9px;transition:all .2s;}
+.np:hover{background:rgba(230,0,35,.18);border-color:var(--red);color:#fff;}
+.niche-note{margin-top:22px;background:rgba(212,136,10,.1);border:1px solid var(--gold-border);border-radius:12px;padding:14px 18px;color:#e8a020;font-size:13px;font-weight:600;text-align:center;}
+
+/* ROADMAP */
+.weeks{margin-top:36px;position:relative;display:flex;flex-direction:column;}
+.weeks::before{content:'';position:absolute;left:28px;top:0;bottom:0;width:2px;background:var(--border);}
+.week{display:flex;gap:22px;align-items:flex-start;padding-bottom:32px;}
+.wk-circle{width:56px;height:56px;border-radius:50%;background:var(--red);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:2;box-shadow:0 4px 14px rgba(230,0,35,.3);font-family:'Syne',sans-serif;}
+.wk-circle .wlabel{font-size:8px;font-weight:900;text-transform:uppercase;letter-spacing:.5px;opacity:.8;}
+.wk-circle .wnum{font-size:20px;font-weight:900;line-height:1;}
+.wk-body{padding-top:8px;flex:1;}
+.wk-body h3{font-size:16px;font-weight:700;margin-bottom:6px;}
+.wk-body p{font-size:13px;color:var(--mid);line-height:1.65;}
+.wk-mile{display:inline-flex;align-items:center;gap:6px;margin-top:9px;background:var(--gold-bg);border:1px solid var(--gold-border);border-radius:50px;padding:4px 12px;font-size:12px;color:#8a5c00;font-weight:700;}
+
+/* TESTIMONIALS */
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;margin-top:34px;}
+.tc{background:#fff;border-radius:18px;padding:24px;border:1px solid var(--border);transition:transform .2s,box-shadow .2s;}
+.tc:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.08);}
+.tc-stars{color:#f59e0b;font-size:14px;letter-spacing:2px;margin-bottom:12px;}
+.tc-text{font-size:14px;color:var(--mid);line-height:1.72;font-style:italic;margin-bottom:14px;border-left:3px solid var(--red);padding-left:14px;}
+.tc-result{background:var(--green-bg);border:1px solid var(--green-border);border-radius:10px;padding:11px 14px;margin-bottom:14px;}
+.tc-result strong{font-size:15px;color:#0a6832;font-weight:800;display:block;}
+.tc-result span{font-size:12px;color:#2e8a56;font-weight:500;}
+.tc-author{display:flex;align-items:center;gap:10px;}
+.av{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:900;font-size:13px;color:#fff;flex-shrink:0;}
+.av1{background:linear-gradient(135deg,#ff6b6b,#c0392b);}
+.av2{background:linear-gradient(135deg,#3498db,#1a5276);}
+.av3{background:linear-gradient(135deg,#f39c12,#d35400);}
+.av4{background:linear-gradient(135deg,#8e44ad,#6c3483);}
+.av5{background:linear-gradient(135deg,#27ae60,#1e8449);}
+.tc-info strong{font-size:13px;display:block;font-weight:700;}
+.tc-info span{font-size:12px;color:var(--light);}
+.tc-7day{display:inline-flex;align-items:center;gap:5px;margin-top:10px;background:#fff0f0;border:1px solid #fcc;border-radius:50px;padding:3px 10px;font-size:11px;font-weight:700;color:var(--red);}
+
+/* GUARANTEE */
+.guar-box{background:linear-gradient(135deg,#f9fff4,#fff9f0);border:2px solid var(--green-border);border-radius:22px;padding:44px 36px;text-align:center;max-width:640px;margin:0 auto;}
+.gi{font-size:52px;margin-bottom:16px;}
+.guar-box h2{font-family:'Playfair Display',serif;font-size:clamp(22px,4vw,32px);font-weight:900;margin-bottom:14px;color:var(--dark);}
+.guar-box h2 em{color:var(--green);font-style:normal;}
+.guar-box p{font-size:14px;color:var(--mid);line-height:1.8;}
+.guar-chips{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:20px;}
+.gchip{background:#fff;border:1px solid var(--green-border);border-radius:50px;padding:6px 14px;font-size:12px;font-weight:700;color:var(--green);}
+
+/* FAQ */
+.faq-list{margin-top:32px;display:flex;flex-direction:column;gap:10px;}
+.faq-item{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden;}
+.faq-q{padding:17px 18px;font-weight:700;font-size:14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;user-select:none;line-height:1.4;}
+.faq-icon{font-size:20px;color:var(--red);flex-shrink:0;transition:transform .3s;font-weight:300;line-height:1;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-a{font-size:14px;color:var(--mid);line-height:1.72;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s;}
+.faq-item.open .faq-a{max-height:320px;padding:0 18px 18px;}
+
+/* ── FINAL CTA ── */
+.final-sec{background:var(--dark);padding:76px 20px;text-align:center;}
+.final-sec h2{font-family:'Playfair Display',serif;font-size:clamp(28px,5.5vw,50px);font-weight:900;color:#fff;line-height:1.12;margin-bottom:12px;}
+.final-sec h2 em{color:#ffd166;font-style:normal;}
+.final-sec .fsub{display:block;color:#888;font-size:15px;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto;}
+.fpb{max-width:350px;margin:0 auto 20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:24px;}
+.fpb-row{display:flex;align-items:center;justify-content:center;gap:12px;}
+.fpb-was{color:#555;font-size:20px;text-decoration:line-through;}
+.fpb-now{font-family:'Syne',sans-serif;font-size:56px;font-weight:900;color:#fff;line-height:1;}
+.fpb-save{color:#ffd166;font-size:13px;font-weight:700;margin-top:6px;}
+.final-live{display:flex;align-items:center;justify-content:center;gap:7px;color:#666;font-size:13px;margin-bottom:26px;}
+.final-live .fsn{color:#fff;font-weight:800;}
+.cta-lg{display:inline-block;background:var(--red);color:#fff;padding:19px 46px;border-radius:14px;font-size:18px;font-weight:800;text-decoration:none;transition:all .25s;box-shadow:0 5px 26px rgba(230,0,35,.45);}
+.cta-lg:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 10px 36px rgba(230,0,35,.55);}
+.trust-row{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;margin-top:22px;}
+.tr{color:#555;font-size:12px;display:flex;align-items:center;gap:4px;}
+.tr b{color:#777;}
+
+/* FOOTER */
+footer{background:#0a0a0a;padding:24px;text-align:center;font-size:12px;color:#444;}
+footer a{color:#555;text-decoration:none;}
+footer a:hover{color:#888;}
+
+/* MOBILE FLOAT BAR */
+.fbar{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:2px solid var(--red);padding:10px 16px;z-index:300;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 -4px 20px rgba(0,0,0,.13);}
+.fb-l{}
+.fb-was{font-size:11px;color:#bbb;text-decoration:line-through;}
+.fb-price{font-family:'Syne',sans-serif;font-size:24px;font-weight:900;color:var(--red);line-height:1.1;}
+.fb-spots{font-size:11px;color:var(--green);font-weight:700;display:flex;align-items:center;gap:4px;}
+.fb-dot{width:5px;height:5px;background:var(--green);border-radius:50%;animation:pulse 1.4s infinite;}
+.fb-cta{background:var(--red);color:#fff;padding:13px 20px;border-radius:12px;font-size:14px;font-weight:800;text-decoration:none;white-space:nowrap;}
+.fb-cta:hover{background:var(--red-dark);}
+
+/* JOIN POPUP */
+.jpop{position:fixed;bottom:82px;left:14px;background:#fff;border:1px solid var(--border);border-radius:14px;padding:12px 14px;box-shadow:0 6px 30px rgba(0,0,0,.14);z-index:400;display:flex;align-items:center;gap:10px;max-width:268px;transform:translateX(-310px);transition:transform .5s cubic-bezier(.34,1.56,.64,1);pointer-events:none;}
+.jpop.show{transform:translateX(0);}
+.jp-av{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#fff;flex-shrink:0;font-family:'Syne',sans-serif;}
+.jp-body strong{display:block;font-weight:700;font-size:13px;color:var(--dark);}
+.jp-body span{font-size:11px;color:var(--light);}
+.jp-check{color:var(--green);font-size:17px;flex-shrink:0;}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.eyebrow{animation:fadeUp .5s ease both;}
+.hero h1{animation:fadeUp .5s .1s ease both;}
+.hero-promise{animation:fadeUp .5s .18s ease both;}
+.hero-sub{animation:fadeUp .5s .22s ease both;}
+.pcard{animation:fadeUp .5s .3s ease both;}
+
+@media(max-width:600px){
+  .fbar{display:flex;}
+  body{padding-bottom:76px;}
+  .stat-row{gap:4px;} .sn{font-size:19px!important;}
+  .weeks::before{left:24px;} .wk-circle{width:48px;height:48px;}
+  .guar-box{padding:28px 18px;}
+  .nav-live{display:none;}
+  .jpop{bottom:86px;}
+  .sp-bar-inner{gap:16px;}
+  .spb-div{display:none;}
+  .promise-box{padding:28px 18px;}
+}
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker">
+  <span>🔥</span>
+  <span>Only <span class="t-hl" id="tick-spots">14</span> spots left at <span class="t-hl">$24</span> — price returns to $149 when they're gone</span>
+  <span class="t-badge"><span class="gdot"></span>&nbsp;Live</span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">
+    <div class="picon">P</div>
+    PinProfit
+  </a>
+  <div class="nav-r">
+    <div class="nav-live"><span class="gdot"></span>&nbsp;<span id="nav-spots">14</span> spots at $24</div>
+    <a href="#get" class="nav-cta">Get Instant Access →</a>
+  </div>
+</nav>
+
+<!-- PROGRESS BAR -->
+<div class="prog-strip">
+  <div class="prog-inner">
+    <div class="prog-labels">
+      <span class="pl-taken">🔴 <span id="pb-taken">86</span>/100 launch spots taken</span>
+      <span class="pl-left"><span id="pb-left">14</span> spots remaining at $24</span>
+    </div>
+    <div class="prog-track">
+      <div class="prog-fill" id="prog-fill" style="width:86%"></div>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="eyebrow">✦ Trusted by 1,000+ Beginners · Zero Ad Spend System</div>
+
+  <h1>
+    Get Your First<br>
+    <em>Pinterest Sale in 7 Days</em><br>
+    — <u>Guaranteed</u>
+  </h1>
+
+  <div class="hero-promise">
+    <span class="hp-check">✅</span>
+    If you don't see results in 7 days, I'll personally troubleshoot your account — free.
+  </div>
+
+  <p class="hero-sub">
+    The step-by-step system I used to earn <strong>$184,000+ on Pinterest</strong> without spending a dollar on ads. No experience. No following. No guesswork — just follow the daily plan.
+  </p>
+
+  <!-- PRICE CARD -->
+  <div class="pcard" id="get">
+    <div class="pcard-ribbon">🔥 Launch Price — Closes When Spots Fill</div>
+    <div class="price-row">
+      <span class="p-was">$149</span>
+      <span class="p-now">$24</span>
+    </div>
+    <p class="p-save">✓ You save $125 — today only</p>
+
+    <div class="live-pill">
+      <span class="gdot" style="width:9px;height:9px;flex-shrink:0;"></span>
+      <div class="lp-text">
+        <strong id="hero-joined">67 people joined today</strong>
+        <span>Only <b id="hero-spots-b">14 spots</b> left at this price</span>
+      </div>
+    </div>
+
+    <div class="slots-wrap">
+      <div class="slots-meta">
+        <span class="sm-red">■ <span id="sv-taken">86</span> of 100 spots taken</span>
+        <span><span id="sv-left">14</span> remaining</span>
+      </div>
+      <div class="slot-track">
+        <div class="slot-bar" id="slot-bar" style="width:86%"></div>
+      </div>
+    </div>
+
+    <a href="https://gumroad.com" target="_blank" class="cta">
+      ⚡ Yes — Show Me the System. $24 →
+    </a>
+    <div class="cta-trust">
+      <span>🔒 Secure</span>
+      <span>·</span>
+      <span>📦 Instant delivery</span>
+      <span>·</span>
+      <span>🛡️ 7-day guarantee</span>
+    </div>
+  </div>
+
+  <div class="proof-row">
+    <div class="ppill">💰 $184K earned organically</div>
+    <div class="ppill">🎯 10+ tested niches</div>
+    <div class="ppill">🤖 AI pin creation included</div>
+    <div class="ppill">📅 Daily action plan</div>
+    <div class="ppill">🛡️ 7-day results guarantee</div>
+  </div>
+</section>
+
+<!-- STAT BAR -->
+<div class="stat-bar">
+  <div class="stat-row">
+    <div><div class="sn">$184K+</div><div class="sl">Pinterest earnings</div></div>
+    <div><div class="sn">$0</div><div class="sl">Ad spend ever</div></div>
+    <div><div class="sn">7 Days</div><div class="sl">To first results</div></div>
+  </div>
+</div>
+
+<!-- 7-DAY PROMISE -->
+<section class="promise-sec">
+  <div class="ps-wrap">
+    <div class="promise-box">
+      <div class="pb-day"><span></span>7<span> Day</span></div>
+      <div class="pb-label">First Sale Promise</div>
+      <h2 class="pb-title">Follow the plan for 7 days.<br><em>See real results — or I work with you personally.</em></h2>
+      <p class="pb-desc">This isn't a "results may vary" disclaimer. It's a real commitment. The plan is built day-by-day so that even someone who has never made a dollar online can publish their first pin, get their first click, and make their first sale inside a week. That's the design. That's the promise.</p>
+
+      <div class="pb-steps">
+        <div class="pb-step"><div class="step-day">Day 1–2</div><p><strong>Account & board setup.</strong> Pinterest-optimized profile. First 5 pins published using templates.</p></div>
+        <div class="pb-step"><div class="step-day">Day 3–4</div><p><strong>First real traffic.</strong> Pins indexed. Algorithm starts distributing. Clicks begin coming in.</p></div>
+        <div class="pb-step"><div class="step-day">Day 5–6</div><p><strong>Clicks become leads.</strong> Outbound link strategy kicks in. Affiliate or product page traffic rises.</p></div>
+        <div class="pb-step"><div class="step-day">Day 7</div><p><strong>First sale.</strong> Commission hits your dashboard. The system is working — now you scale it.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF BAR -->
+<div class="sp-bar">
+  <div class="sp-bar-inner">
+    <div class="spb-item"><span class="spb-icon">⭐</span><div class="spb-text"><strong>4.9 / 5.0</strong><span>Average rating</span></div></div>
+    <div class="spb-div"></div>
+    <div class="spb-item"><span class="spb-icon">👥</span><div class="spb-text"><strong>1,000+</strong><span>Buyers this year</span></div></div>
+    <div class="spb-div"></div>
+    <div class="spb-item"><span class="spb-icon">🇺🇸</span><div class="spb-text"><strong>US-focused</strong><span>Strategy & niches</span></div></div>
+    <div class="spb-div"></div>
+    <div class="spb-item"><span class="spb-icon">💵</span><div class="spb-text"><strong>$184K+</strong><span>Creator earnings</span></div></div>
+  </div>
+</div>
+
+<!-- WHO IS THIS FOR -->
+<section class="sec-cream">
+  <div class="sw">
+    <span class="tag">This Is For You If</span>
+    <h2 class="sh">You don't need experience.<br><em>You need the right system.</em></h2>
+    <p class="sp">If you can copy a template, follow a daily checklist, and spend 30 minutes a day — you can do this.</p>
+    <div class="who-grid">
+      <div class="wc"><div class="we">👩‍👧</div><h3>Stay-at-Home Moms</h3><p>Hundreds of US moms use Pinterest to earn consistent side income during nap time or after bedtime — no schedule, no boss.</p></div>
+      <div class="wc"><div class="we">🎓</div><h3>College Students</h3><p>No money to invest? That's fine. This system costs zero dollars to run. Build income while studying, starting with your first week.</p></div>
+      <div class="wc"><div class="we">⚡</div><h3>Side Hustlers</h3><p>Tried dropshipping, Etsy, freelancing — nothing stuck? Pinterest organic is fundamentally different. It compounds over time.</p></div>
+      <div class="wc"><div class="we">🏪</div><h3>Small Business Owners</h3><p>You have a product or service but no traffic. Pinterest sends high-intent buyers directly to your site — for free, every day.</p></div>
+      <div class="wc"><div class="we">🆕</div><h3>Complete Beginners</h3><p>Never made a dollar online. Don't know what a "niche" is. Doesn't matter. The guide walks you through every single step.</p></div>
+      <div class="wc"><div class="we">💻</div><h3>Digital Product Creators</h3><p>Ebooks, templates, Canva packs, courses — Pinterest is the #1 platform where buyers search for and purchase digital products.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN SECTION -->
+<section class="sec-white">
+  <div class="sw">
+    <span class="tag">Sound Familiar?</span>
+    <h2 class="sh">You've tried. You're tired.<br><em>This is what's actually been missing.</em></h2>
+    <div class="pain-list">
+      <div class="pi"><span class="pi-x">📱</span><div class="pi-t"><strong>Instagram and TikTok burned you out.</strong> Posting every single day for algorithm crumbs while creators with millions of followers get everything.</div></div>
+      <div class="pi"><span class="pi-x">💸</span><div class="pi-t"><strong>You spent money on ads that didn't convert.</strong> Meta, Google, Etsy ads — real dollars gone. Nothing to show but a lighter wallet.</div></div>
+      <div class="pi"><span class="pi-x">🎥</span><div class="pi-t"><strong>You've watched 47 YouTube videos</strong> and still don't know what to actually do tomorrow morning. Advice without a plan is just noise.</div></div>
+      <div class="pi"><span class="pi-x">🌀</span><div class="pi-t"><strong>You're stuck in research mode.</strong> Paralyzed by niche selection, tool decisions, and "what if I do it wrong." Meanwhile nothing gets published.</div></div>
+    </div>
+    <div class="sol-box">
+      <p>Pinterest is different from every platform you've tried. It's a <strong>search engine</strong> — not a social media race. A brand-new account with 0 followers can reach 10,000+ monthly viewers in 30 days because Pinterest <strong>distributes content based on quality, not follower count</strong>. That's your unfair advantage. This guide shows you exactly how to use it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section class="sec-cream">
+  <div class="sw">
+    <span class="tag">Inside the Guide</span>
+    <h2 class="sh">10 modules. <em>One clear outcome.</em></h2>
+    <p class="sp">Everything is ordered, numbered, and written so you can start executing today — not "after you figure it out."</p>
+    <div class="inside-grid">
+      <div class="ic"><div class="ic-num">Module 01</div><h3>Account Setup That Signals Trust to Pinterest</h3><p>Business account configuration, bio formula, and board architecture that tells Pinterest's algorithm you're a serious, trusted creator from day one.</p><span class="ic-tag">⚡ Do this first</span></div>
+      <div class="ic"><div class="ic-num">Module 02</div><h3>10+ Underrated Niches That Actually Convert</h3><p>Not the overcrowded ones. These are high-buyer-intent categories with real monthly search volume and low creator competition — personally tested.</p><span class="ic-tag">🎯 Most valuable module</span></div>
+      <div class="ic"><div class="ic-num">Module 03</div><h3>AI Pin Creation — No Design Skills Needed</h3><p>Exact prompts for free AI tools that generate scroll-stopping designs, compelling hooks, and optimized descriptions in under 10 minutes.</p><span class="ic-tag">🤖 Game-changer</span></div>
+      <div class="ic"><div class="ic-num">Module 04</div><h3>The Viral Pin Formula That Stops the Scroll</h3><p>Hook position, text overlay rules, color psychology, and image composition — the exact Canva layout used in pins that get 10k+ saves.</p><span class="ic-tag">🎨 Free Canva templates</span></div>
+      <div class="ic"><div class="ic-num">Module 05</div><h3>Link Strategy That Won't Get You Banned</h3><p>Most new accounts get flagged within their first week because of bad link practices. This module shows exactly how to add links safely from day one.</p><span class="ic-tag">🛡️ Read before pinning</span></div>
+      <div class="ic"><div class="ic-num">Module 06</div><h3>Posting Schedule for Maximum Algorithm Reach</h3><p>The exact pin-per-day number, ideal posting times, and board rotation sequence that grows your reach without triggering spam detection.</p><span class="ic-tag">📅 Precision matters</span></div>
+      <div class="ic"><div class="ic-num">Module 07</div><h3>Turn Views Into Clicks — The Outbound Strategy</h3><p>Profile link setup, landing page guidance, and the pin description formula that converts impressions into outbound clicks and actual page visits.</p><span class="ic-tag">💰 Where money starts</span></div>
+      <div class="ic"><div class="ic-num">Module 08</div><h3>10 Real Ways to Monetize — Pick What Fits You</h3><p>Affiliate marketing, digital products, services, print-on-demand, email list building — each method explained with setup steps matched to where you are now.</p><span class="ic-tag">💡 Choose your path</span></div>
+      <div class="ic"><div class="ic-num">Module 09</div><h3>Analytics: Know What's Working Before Others Do</h3><p>The 3 metrics that tell you a pin is winning — and the exact decision rule for when to replicate a winner versus when to cut and move on.</p><span class="ic-tag">📊 Scale intelligently</span></div>
+      <div class="ic"><div class="ic-num">Module 10</div><h3>Hook Templates That Are Proven to Convert</h3><p>Word-for-word pin title and description formulas built from top-performing pins. Plug in your niche, publish. The algorithm does the rest.</p><span class="ic-tag">✍️ Copy-paste ready</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- NICHES -->
+<section class="sec-dark">
+  <div class="sw">
+    <span class="tag" style="color:#e8a020">10+ Proven Niches Inside</span>
+    <h2 class="sh">The niches <em style="color:#ffd166">nobody's talking about</em> — that actually make money</h2>
+    <p class="sp">These aren't the saturated ones. Every niche below includes sub-niche angle, keyword strategy, and which monetization method works best.</p>
+    <div class="niche-grid">
+      <div class="np">🏠 Home Decor</div>
+      <div class="np">💪 Health & Wellness</div>
+      <div class="np">💰 Personal Finance</div>
+      <div class="np">🌿 Sustainable Living</div>
+      <div class="np">📚 Self-Improvement</div>
+      <div class="np">🍽️ Food & Recipes</div>
+      <div class="np">✈️ Budget Travel</div>
+      <div class="np">👶 Mom & Parenting</div>
+      <div class="np">🎨 Digital Products</div>
+      <div class="np">📖 Online Education</div>
+      <div class="np">🐾 Pet Care</div>
+      <div class="np">💍 Wedding Planning</div>
+    </div>
+    <div class="niche-note">🎯 Guide breaks down exact sub-niches, keywords, and monetization method for each — not just names on a list</div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="sec-white">
+  <div class="sw">
+    <span class="tag">30-Day Action Plan</span>
+    <h2 class="sh">You'll never wonder<br><em>"what do I do today?"</em></h2>
+    <p class="sp">Every day is planned. Every milestone is clear. This isn't a video course — it's a working document you execute daily.</p>
+    <div class="weeks">
+      <div class="week">
+        <div class="wk-circle"><span class="wlabel">WK</span><span class="wnum">1</span></div>
+        <div class="wk-body">
+          <h3>Setup, First Pins, First Impressions</h3>
+          <p>Account fully configured. Niche locked in using the guide's criteria. Board structure built. First 10 pins published using the provided templates and AI prompts. Pinterest starts indexing your content.</p>
+          <span class="wk-mile">📌 Day 7 → First sale target</span>
+        </div>
+      </div>
+      <div class="week">
+        <div class="wk-circle"><span class="wlabel">WK</span><span class="wnum">2</span></div>
+        <div class="wk-body">
+          <h3>Consistent Routine → Algorithm Recognizes You</h3>
+          <p>Daily pinning routine locked in. Pinterest categorizes your account as a trusted creator in your niche. First real outbound link clicks appear in your analytics. Early winners identified.</p>
+          <span class="wk-mile">🚀 Consistent traffic. Clicks happening.</span>
+        </div>
+      </div>
+      <div class="week">
+        <div class="wk-circle"><span class="wlabel">WK</span><span class="wnum">3</span></div>
+        <div class="wk-body">
+          <h3>Reach Expands — Real Commissions Start Showing</h3>
+          <p>Pins are distributed beyond followers. First viral pin candidates emerge. Affiliate commissions and digital product sales start appearing in your dashboard. The system is running on its own.</p>
+          <span class="wk-mile">💰 Sales confirmed in dashboard</span>
+        </div>
+      </div>
+      <div class="week">
+        <div class="wk-circle"><span class="wlabel">WK</span><span class="wnum">4</span></div>
+        <div class="wk-body">
+          <h3>Scale What Works — Build Toward $10K</h3>
+          <p>Double down on winning pins. Expand into related sub-niches. By day 30 you have a proven income system that runs while you sleep — and a clear path to scaling toward $10,000.</p>
+          <span class="wk-mile">🎯 Repeatable system that compounds</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec-cream">
+  <div class="sw">
+    <span class="tag">Real Results From Real People</span>
+    <h2 class="sh">They followed the exact system.<br><em>Here's what happened.</em></h2>
+    <p class="sp">Not influencer endorsements. Not paid reviews. Buyers who applied the blueprint and reported back.</p>
+    <div class="testi-grid">
+
+      <div class="tc">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-text">"I had zero online income before this. The niche breakdown alone would've saved me 3 months of wrong turns. I followed each day of the plan exactly. By day 8 I had my first affiliate commission."</p>
+        <div class="tc-result">
+          <strong>$847 in her first 30 days</strong>
+          <span>Now $1,600+/month consistently</span>
+        </div>
+        <div class="tc-author">
+          <div class="av av1">JM</div>
+          <div class="tc-info"><strong>Jessica M.</strong><span>Stay-at-home mom · Nashville, TN</span></div>
+        </div>
+        <span class="tc-7day">🗓 First sale: Day 7</span>
+      </div>
+
+      <div class="tc">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-text">"I'd burned through $400 on Facebook ads with basically nothing to show for it. The Pinterest organic approach is a completely different model. This guide explained it clearly and the results backed it up."</p>
+        <div class="tc-result">
+          <strong>Ads cut to $0 · Pinterest: $1,400+/mo</strong>
+          <span>Fully passive income stream now</span>
+        </div>
+        <div class="tc-author">
+          <div class="av av2">DH</div>
+          <div class="tc-info"><strong>Daniel H.</strong><span>Freelance graphic designer · Austin, TX</span></div>
+        </div>
+        <span class="tc-7day">🗓 First click: Day 5</span>
+      </div>
+
+      <div class="tc">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-text">"The hook templates are genuinely worth 10x the price. I copy the structure, swap in my niche, and publish. Every single one gets saves and clicks. My digital shop traffic tripled in under three weeks."</p>
+        <div class="tc-result">
+          <strong>5 sales/month → 34 sales/month</strong>
+          <span>Using only Pinterest organic traffic</span>
+        </div>
+        <div class="tc-author">
+          <div class="av av3">KW</div>
+          <div class="tc-info"><strong>Kayla W.</strong><span>Digital template seller · Denver, CO</span></div>
+        </div>
+        <span class="tc-7day">🗓 First sale: Day 6</span>
+      </div>
+
+      <div class="tc">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-text">"I'm a sophomore in college with literally no money to invest. I was expecting this to be another 'just believe in yourself' type guide. It wasn't — it was a numbered plan I could start the same day."</p>
+        <div class="tc-result">
+          <strong>$290 in month one — zero investment</strong>
+          <span>Scaling toward $1,000/month</span>
+        </div>
+        <div class="tc-author">
+          <div class="av av4">BT</div>
+          <div class="tc-info"><strong>Brandon T.</strong><span>College student · Columbus, OH</span></div>
+        </div>
+        <span class="tc-7day">🗓 First click: Day 4</span>
+      </div>
+
+      <div class="tc">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-text">"I run a small handmade jewelry business and Pinterest was always an afterthought. This guide showed me exactly how to set it up as a real traffic channel. My Etsy store went from 3 visits a day to 90+."</p>
+        <div class="tc-result">
+          <strong>Etsy visits: 3/day → 90+/day</strong>
+          <span>Sales up 4x in 6 weeks</span>
+        </div>
+        <div class="tc-author">
+          <div class="av av5">LG</div>
+          <div class="tc-info"><strong>Lauren G.</strong><span>Small business owner · Portland, OR</span></div>
+        </div>
+        <span class="tc-7day">🗓 Traffic surge: Day 9</span>
+      </div>
+
+      <div class="tc">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-text">"I've been in the 'trying to make money online' cycle for two years. Dropshipping, Fiverr, Upwork — nothing clicked. Pinterest finally made sense because the guide explains the why, not just the what."</p>
+        <div class="tc-result">
+          <strong>$520 affiliate income · Month 1</strong>
+          <span>Consistent and growing every month</span>
+        </div>
+        <div class="tc-author">
+          <div class="av av1">MR</div>
+          <div class="tc-info"><strong>Marcus R.</strong><span>Side hustler · Atlanta, GA</span></div>
+        </div>
+        <span class="tc-7day">🗓 First commission: Day 8</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="sec-white">
+  <div class="sw">
+    <div class="guar-box">
+      <div class="gi">🛡️</div>
+      <h2>The <em>7-Day Results</em> Guarantee</h2>
+      <p>Follow the daily plan for 7 days — set up your account, publish your pins, apply the link strategy. If you don't see at least your first real traffic and a path to your first sale, reach out. I'll personally review your account, identify exactly what's off, and fix it with you one-on-one. No forms. No waiting. Just direct help.</p>
+      <div class="guar-chips">
+        <span class="gchip">✓ No questions asked</span>
+        <span class="gchip">✓ Personal review</span>
+        <span class="gchip">✓ Real accountability</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec-cream">
+  <div class="sw">
+    <span class="tag">Common Questions</span>
+    <h2 class="sh">Honest answers.<br><em>No sales spin.</em></h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q">How is this different from every other Pinterest course I've seen?<span class="faq-icon">+</span></div>
+        <div class="faq-a">Most guides are built by people who teach Pinterest — not people who earn from it. This system comes from $184K+ in actual Pinterest revenue. Every module covers something that directly contributed to that income. There are no filler sections, no generic advice, and no upsells.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is the 7-day promise realistic — or just marketing?<span class="faq-icon">+</span></div>
+        <div class="faq-a">It's realistic IF you follow the plan. Pinterest indexes new pins within 24–72 hours. If you set up correctly, post your first 10 pins using the provided templates, and use the link strategy in Module 5, you can see your first clicks within 3–5 days. First sales typically follow within 5–9 days depending on niche. That's not a stretch — it's what the plan is designed to produce.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Do I need to spend any money to follow this system?<span class="faq-icon">+</span></div>
+        <div class="faq-a">No. Pinterest is free. Canva (free version) is all you need for pin design. Affiliate networks are free to join. The only cost is this guide — and it's $24. That's the entire investment. No hidden tools, no "recommended upgrades."</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">I have zero followers and zero experience. Will this still work?<span class="faq-icon">+</span></div>
+        <div class="faq-a">Yes — and this is exactly who the guide was built for. Pinterest doesn't reward followers. It rewards relevance and quality. A brand-new account that follows this system correctly can outperform accounts with thousands of followers because Pinterest is a search engine, not a popularity contest.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What format is the guide and how do I access it?<span class="faq-icon">+</span></div>
+        <div class="faq-a">It's a PDF delivered instantly via Gumroad the moment you purchase. Read it on your phone, laptop, or tablet. You own it forever — no subscription, no expiration, and all future updates are included at no extra cost.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Why is it $24 and not $149? What's the catch?<span class="faq-icon">+</span></div>
+        <div class="faq-a">There's no catch. It's a launch promotion — 100 spots at $24, then the price goes to $149 permanently. The content is identical at both prices. The discount exists because early buyers provide word-of-mouth and reviews that help grow the brand. Once the 100 spots are gone, the sale closes. That's it.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-sec" id="final">
+  <h2>Your first Pinterest sale<br>is <em>7 days away.</em></h2>
+  <span class="fsub">Stop watching other people build income online. You have the same 24 hours they do — now you'll have their exact system.</span>
+  <div class="fpb">
+    <div class="fpb-row">
+      <span class="fpb-was">$149</span>
+      <span class="fpb-now">$24</span>
+    </div>
+    <div class="fpb-save">Save $125 today · Launch price only</div>
+  </div>
+  <div class="final-live">
+    <span class="gdot"></span>
+    Only <span class="fsn">&nbsp;<span id="final-spots">14</span>&nbsp;</span> spots remaining at $24
+  </div>
+  <a href="https://gumroad.com" target="_blank" class="cta-lg">⚡ Get Instant Access — $24 →</a>
+  <div class="trust-row">
+    <span class="tr">🔒 <b>Secure checkout</b></span>
+    <span class="tr">📦 <b>Instant delivery</b></span>
+    <span class="tr">🛡️ <b>7-day guarantee</b></span>
+    <span class="tr">♾️ <b>Lifetime access</b></span>
+    <span class="tr">🚫 <b>No upsells</b></span>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 PinProfit Guide &nbsp;·&nbsp; <a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Use</a> &nbsp;·&nbsp; <a href="#">Contact</a></p>
+  <p style="margin-top:8px;color:#333;">Individual results vary. Income depends on consistency, niche selection, and effort. The 7-day results guarantee applies to account review and support, not guaranteed income.</p>
+</footer>
+
+<!-- MOBILE FLOAT BAR -->
+<div class="fbar" id="fbar">
+  <div class="fb-l">
+    <div class="fb-was">$149</div>
+    <div class="fb-price">$24</div>
+    <div class="fb-spots"><span class="fb-dot"></span> <span id="fb-spots">14</span> spots left</div>
+  </div>
+  <a href="#get" class="fb-cta">Get Access — $24 →</a>
+</div>
+
+<!-- JOIN POPUP -->
+<div class="jpop" id="jpop">
+  <div class="jp-av" id="jp-av"></div>
+  <div class="jp-body">
+    <strong id="jp-name"></strong>
+    <span id="jp-info"></span>
+  </div>
+  <span class="jp-check">✓</span>
+</div>
+
+<script>
+// ── SPOTS SYSTEM ──────────────────────────────
+// Fresh visitor → random 11–14 spots
+// Same visitor within 8 hours → same number persists
+// Every 3–7 minutes in-session → quietly decrements by 1
+const SK = 'pinprofit_v5';
+const TOTAL = 100;
+
+function loadSpots() {
+  try {
+    const raw = localStorage.getItem(SK);
+    if (raw) {
+      const d = JSON.parse(raw);
+      const hrs = (Date.now() - d.ts) / 3600000;
+      if (hrs < 8 && d.s >= 4) return d.s;
+    }
+  } catch(e) {}
+  const s = Math.floor(Math.random() * 4) + 11; // 11–14
+  saveSpots(s);
+  return s;
+}
+function saveSpots(s) {
+  try { localStorage.setItem(SK, JSON.stringify({s, ts: Date.now()})); } catch(e) {}
+}
+
+let spots = loadSpots();
+
+function renderSpots() {
+  const taken = TOTAL - spots;
+  const pct = (taken / TOTAL * 100).toFixed(1);
+  // Numbers
+  ['tick-spots','nav-spots','final-spots','fb-spots'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = spots;
+  });
+  const hsb = document.getElementById('hero-spots-b');
+  if (hsb) hsb.textContent = spots + ' spots';
+  ['pb-taken','sv-taken'].forEach(id => { const el=document.getElementById(id); if(el) el.textContent=taken; });
+  ['pb-left','sv-left'].forEach(id => { const el=document.getElementById(id); if(el) el.textContent=spots; });
+  // Bars
+  ['prog-fill','slot-bar'].forEach(id => { const el=document.getElementById(id); if(el) el.style.width=pct+'%'; });
+}
+renderSpots();
+
+// Slow session decrement
+function scheduleDecrement() {
+  const delay = Math.floor(Math.random() * 240000) + 180000; // 3–7 min
+  setTimeout(() => {
+    if (spots > 4) { spots--; saveSpots(spots); renderSpots(); }
+    scheduleDecrement();
+  }, delay);
+}
+scheduleDecrement();
+
+// ── JOINED TODAY ──────────────────────────────
+const joined = Math.floor(Math.random() * 18) + 58; // 58–75
+const hjEl = document.getElementById('hero-joined');
+if (hjEl) hjEl.textContent = joined + ' people joined today';
+
+// ── FAQ ──────────────────────────────────────
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  });
+});
+
+// ── JOIN NOTIFICATION ─────────────────────────
+// All US names and cities
+const people = [
+  {n:'Jessica M.', l:'Nashville, TN', c:'#c0392b'},
+  {n:'Daniel H.', l:'Austin, TX', c:'#2980b9'},
+  {n:'Kayla W.', l:'Denver, CO', c:'#d35400'},
+  {n:'Brandon T.', l:'Columbus, OH', c:'#8e44ad'},
+  {n:'Lauren G.', l:'Portland, OR', c:'#27ae60'},
+  {n:'Marcus R.', l:'Atlanta, GA', c:'#c0392b'},
+  {n:'Stephanie B.', l:'Phoenix, AZ', c:'#d35400'},
+  {n:'Tyler N.', l:'Charlotte, NC', c:'#2980b9'},
+  {n:'Ashley K.', l:'Chicago, IL', c:'#8e44ad'},
+  {n:'Ryan C.', l:'San Diego, CA', c:'#27ae60'},
+  {n:'Brianna L.', l:'Houston, TX', c:'#c0392b'},
+  {n:'Noah F.', l:'Seattle, WA', c:'#2980b9'},
+  {n:'Megan S.', l:'Dallas, TX', c:'#d35400'},
+  {n:'Jordan P.', l:'Miami, FL', c:'#8e44ad'},
+  {n:'Caitlyn R.', l:'Minneapolis, MN', c:'#27ae60'},
+  {n:'Drew M.', l:'Boston, MA', c:'#c0392b'},
+];
+const intervals = [95,75,110,88,130,70,105,82,120,65,140,90]; // seconds
+
+const pop = document.getElementById('jpop');
+const jpAv = document.getElementById('jp-av');
+const jpName = document.getElementById('jp-name');
+const jpInfo = document.getElementById('jp-info');
+let pIdx = Math.floor(Math.random() * people.length);
+
+function showJoin() {
+  const p = people[pIdx % people.length];
+  jpAv.textContent = p.n.split(' ').map(w => w[0]).join('');
+  jpAv.style.background = p.c;
+  jpName.textContent = p.n + ' just joined';
+  jpInfo.textContent = p.l + ' · just now';
+  pop.classList.add('show');
+  setTimeout(() => pop.classList.remove('show'), 3800);
+  pIdx++;
+  const base = intervals[pIdx % intervals.length] * 1000;
+  const jitter = (Math.random() - 0.5) * 20000;
+  setTimeout(showJoin, Math.max(base + jitter, 55000));
+}
+setTimeout(showJoin, 12000 + Math.random() * 10000);
+
+// ── SMOOTH SCROLL ─────────────────────────────
+document.querySelectorAll('a[href="#get"],a[href="#final"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+  });
+});
+
+// ── FLOAT BAR ─────────────────────────────────
+function syncFloat() {
+  const fb = document.getElementById('fbar');
+  if (fb) fb.style.display = window.innerWidth > 600 ? 'none' : 'flex';
+}
+syncFloat();
+window.addEventListener('resize', syncFloat);
+</script>
+</body>
+</html>
